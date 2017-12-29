@@ -1,0 +1,40 @@
+{# src/OC/PlatformBundle/Resources/views/Advert/edit.html.twig #}
+
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+  Modifier une fiche client
+{% endblock %}
+
+{% block ocplatform_body %}
+
+  <h2>Modifier la fiche client de "{{ advert.Client }}"</h2>
+
+  {{ include("OCPlatformBundle:Advert:form.html.twig") }}
+
+  <p>
+    <a href="{{ path('oc_platform_tablesfiches') }}" class="btn btn-default" id="back">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour
+    </a>
+  </p>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    {# Voici le script en question : #}
+  <script type="text/javascript" src="{{ asset('js/myfunction.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/uploadedit.js') }}"></script>
+  <script>myfunction('div#advert_SiteWeb','#add_SiteWeb', 'Autre site web')</script>
+  <script>myfunction('div#advert_Adresse','#add_Adresse', 'Autre adresse')</script>
+  <script>myfunction('div#advert_TelFax','#add_TelFax', 'Autre téléphone/fax')</script>
+  <script>myfunction('div#advert_NomDeDomaine','#add_NomDeDomaine','Autre nom de domaine','Nom De Domaine')</script>
+  <script>myfunction('div#advert_BaseDeDonnee','#add_BaseDeDonnee', 'Autre base de données','Base De Données')</script>
+  <script>myfunction('div#advert_Sitesweb','#add_Sitesweb','Autre site(s) web','Site web (admin)')</script>
+  <script>myfunction('div#advert_Reseaux','#add_Reseaux', 'Autre réseaux','Réseau Social')</script>
+  <script>myfunction('div#advert_Emails','#add_Emails', 'Autre Email','Email')</script>
+
+    <script>
+        $('#back').attr('href',document.referrer);
+    </script>
+
+{% endblock %}
+

@@ -1,0 +1,404 @@
+{# src/OC/PlatformBundle/Resources/views/Advert/form.html.twig #}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+{% form_theme form _self %}
+
+
+
+  {{ form_start(form, {'attr': {'class': 'form-horizontal', 'id' : 'myForm'}}) }}
+        <div class="block" style="overflow: hidden">
+          <div class="block-title" style="background-color: rgba(229,229,229,0.45)">
+          <h2 style="font-size: larger">Informations de base<br></h2>
+          </div>
+            <div class="col-md-6" id="part">
+                <div class="form-group">
+                {# Génération du label. #}
+                {{ form_label(form.Client, "Client") }}
+                {# Affichage des erreurs pour ce champ précis. #}
+                {{ form_errors(form.Client) }}
+                    <div class="col-md-12">
+                    {# Génération de l'input. #}
+                    {{ form_widget(form.Client) }}
+                    </div>
+                </div>
+                <div class="form-group">
+                {# Génération du label. #}
+                {{ form_label(form.Responsable, "Responsable") }}
+                {# Affichage des erreurs pour ce champ précis. #}
+                {{ form_errors(form.Responsable) }}
+                    <div class="col-md-12">
+                    {# Génération de l'input. #}
+                    {{ form_widget(form.Responsable) }}
+                    </div>
+                </div>
+  {# Génération manuelle et éclatée : #}
+                <div class="form-group">
+    {# Génération du label. #}
+                    {{ form_label(form.MailPrincipal, "Mail principal") }}
+    {# Affichage des erreurs pour ce champ précis. #}
+                    {{ form_errors(form.MailPrincipal) }}
+                    <div class="col-md-12">
+      {# Génération de l'input. #}
+                        {{ form_widget(form.MailPrincipal) }}
+                    </div>
+                </div>
+
+
+  {# Idem pour un autre champ. #}
+                <div class="form-group">
+                    {{ form_label(form.Description, "Description") }}
+                    <div class="col-md-12">
+                        {{ form_widget(form.Description) }}
+                        {{ form_errors(form.Description) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.image, "Logo") }}
+                    <div>
+                        {{ form_widget(form.image,{'attr':{'class':'col-xs-11', 'id' : 'myLogo'}}) }}
+                    </div>
+                    <div>
+                        <img id="blah" src="#" class="img-thumbnail" alt="Votre logo" style="max-height: 50%; max-width: 50%; margin: auto; border-width: 2px; display: block"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {# Génération du label. #}
+                    {{ form_label(form.MF, "Matricule Fiscale") }}
+
+                    {# Affichage des erreurs pour ce champ précis. #}
+                    {{ form_errors(form.MF) }}
+
+                    <div class="col-md-12">
+                        {# Génération de l'input. #}
+                        {{ form_widget(form.MF) }}
+                    </div>
+                </div>
+
+
+            </div>
+
+<div class="col-md-6">
+
+
+
+
+
+    <div class="form-group">
+
+  {{  form_label(form.SiteWeb, "Site(s) web",{'label_attr' : {'style' : 'font-size : 15px'}}) }}
+  <div>
+      {{ form_widget(form.SiteWeb,{'attr':{'class' : 'col-xs-11'}}) }}
+  </div>
+  <div class="col-md-1 col-md-pull-2">
+  <a href="#" id="add_SiteWeb" class="btn btn-success" style="width: 107.08px">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+      Ajouter
+  </a>
+  </div>
+  </div>
+
+
+    <br><br>
+
+  <div class="form-group">
+  {{ form_label(form.Adresse, "Adresse(s)") }}
+  <div>
+  {{ form_widget(form.Adresse,{'attr':{'class' : 'col-xs-11'}}) }}
+  </div>
+  <div class="col-md-1 col-md-pull-2">
+  <a href="#" id="add_Adresse" class="btn btn-success" style="width: 107.08px">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+      Ajouter
+  </a>
+  </div>
+  </div>
+
+
+  <div class="form-group">
+  {{ form_label(form.TelFax, "Teléphone(s)/Fax", {'label_attr': {'class': 'col-sm-5 control-label'}}) }}
+  {{ form_widget(form.TelFax,{'attr':{'class' : 'col-xs-11'}}) }}
+  <div class="col-md-1 col-md-pull-2" style="position: relative">
+  <a href="#" id="add_TelFax" class="btn btn-success" style="width: 107.08px">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+      Ajouter
+  </a>
+  </div>
+  </div>
+
+        </div>
+            <p style="font-size: 1px;">.</p>
+        </div>
+
+
+<div class="row">
+
+    <div id="addnom">
+
+        {%- block _advert_NomDeDomaine_entry_widget -%}
+            <div class="col-md-6">
+                <div class="block">
+                    <div class="block-title" style="background-color: rgba(229,229,229,0.45)">
+                        <h2 style="font-size: larger">mah</h2>
+                    </div>
+                    {{ block('collection_widget') }}
+                </div>
+            </div>
+
+        {%- endblock _advert_NomDeDomaine_entry_widget -%}
+    </div>
+    <script>
+        $('#addnom').remove();
+    </script>
+
+    {{ form_widget(form.NomDeDomaine) }}
+    {{ form_errors(form.NomDeDomaine) }}
+
+<div class="col-md-6">
+      <div class="block" style="min-height: 417px">
+
+        <div class="block-title" style="background-color: rgba(229,229,229,0.45)">
+
+        <h2 style="font-size: larger">Cpanel<br></h2>
+
+        </div>
+  <div class="form-group">
+ {#{ form_label(form.Cpanel, "Cpanel", {'label_attr': {'class': 'col-sm-2 control-label'}}) }#}
+  <div>
+      <br>
+  {{ form_widget(form.Cpanel,{'attr':{'class' : 'col-xs-11'}}) }}
+  </div>
+  </div>
+
+      </div>
+</div>
+
+<div class="col-md-6">
+      <div class="block" style="min-height: 417px">
+
+        <div class="block-title" style="background-color: rgba(229,229,229,0.45)">
+
+        <h2 style="font-size: larger">FTP<br></h2>
+
+
+        </div>
+  <div class="form-group">
+ {#{ form_label(form.FTP, "FTP", {'label_attr': {'class': 'col-sm-2 control-label'}}) }#}
+  <div>
+      <br>
+  {{ form_widget(form.FTP,{'attr':{'class' : 'col-xs-11'}}) }}
+  </div>
+  </div>
+      </div>
+</div>
+
+
+
+
+
+    <div id="addbase">
+
+        {%- block _advert_BaseDeDonnee_entry_widget -%}
+            <div class="col-md-6">
+                <div class="block" style="min-height: 417px">
+                    <div class="block-title" style="background-color: rgba(229,229,229,0.45)">
+                        <h2 style="font-size: larger">mah</h2>
+
+                    </div>
+                    <br>
+                    {{ block('form_widget') }}
+                </div>
+            </div>
+        {%- endblock _advert_BaseDeDonnee_entry_widget -%}
+    </div>
+    <script>
+        $('#addbase').remove();
+    </script>
+
+    {{ form_widget(form.BaseDeDonnee) }}
+    {{ form_errors(form.BaseDeDonnee) }}
+
+
+
+    <div id="addsite">
+
+        {%- block _advert_Sitesweb_entry_widget -%}
+            <div class="col-md-6">
+                <div class="block" style="min-height: 417px">
+                    <div class="block-title" style="background-color: rgba(229,229,229,0.45)">
+                        <h2 style="font-size: larger">mah</h2>
+
+                    </div>
+                    <br>
+                    {{ block('form_widget') }}
+                </div>
+            </div>
+        {%- endblock _advert_Sitesweb_entry_widget -%}
+    </div>
+    <script>
+        $('#addsite').remove();
+    </script>
+
+    {{ form_widget(form.Sitesweb) }}
+    {{ form_errors(form.Sitesweb) }}
+
+
+
+    <div id="addres">
+
+        {%- block _advert_Reseaux_entry_widget -%}
+            <div class="col-md-6">
+                <div class="block" style="min-height: 417px">
+                    <div class="block-title" style="background-color: rgba(229,229,229,0.45)">
+                        <h2 style="font-size: larger">mah</h2>
+
+                    </div>
+                    <br>
+                    {{ block('form_widget') }}
+                </div>
+            </div>
+        {%- endblock _advert_Reseaux_entry_widget -%}
+    </div>
+    <script>
+        $('#addres').remove();
+    </script>
+
+    {{ form_widget(form.Reseaux) }}
+    {{ form_errors(form.Reseaux) }}
+
+
+
+<div class="col-md-12">
+        <div class="block">
+            <div class="block-title">
+                <h1 style="font-size: larger">Packs d'hébergement<br></h1>
+            </div>
+            <div class="form-group">
+                {{ form_widget(form.pack,{'attr':{'class' : 'col-xs-11'}}) }}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="addemail">
+    {%- block _advert_Emails_entry_widget -%}
+        <div class="col-lg-4" style="padding-bottom: 60px">
+            {{ block('form_widget') }}
+        </div>
+    {%- endblock _advert_Emails_entry_widget -%}
+</div>
+<script>
+    $('#addemail').remove();
+</script>
+
+<div class="block">
+    <div class="block-title">
+        <h2>Emails</h2>
+        <div class="block-options pull-right">
+            <a class="btn btn-success" id="add_Emails"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Ajouter</a>
+        </div>
+    </div>
+    <div style="overflow: hidden;">
+    {{ form_widget(form.Emails) }}
+    {{ form_errors(form.Emails) }}
+    </div>
+</div>
+
+
+
+{# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
+  <div style="padding-bottom: 2%; width: 100px;margin: 0 auto;">
+  {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+  </div>
+
+  {# Génération automatique des champs pas encore écrits.
+     Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)
+     et tous les champs cachés (type « hidden »). #}
+{{ form_rest(form) }}
+  {# Fermeture de la balise <form> du formulaire HTML #}
+  {{ form_end(form) }}
+
+{# On charge la bibliothèque jQuery. Ici, je la prends depuis le CDN google
+   mais si vous l'avez en local, changez simplement l'adresse. #}
+
+
+   {% block _advert_SiteWeb_entry_label %}
+   {% endblock %}
+
+
+
+    {% block _advert_Adresse_entry_label %}
+    {% endblock %}
+
+    {% block _advert_Adresse_entry_name_label %}
+    {% endblock %}
+
+    {% block _advert_TelFax_entry_label %}
+    {% endblock %}
+
+    {% block _advert_TelFax_entry_name_label %}
+    {% endblock %}
+
+
+    {% block _advert_NomDeDomaine_entry_label %}
+    {% endblock %}
+
+    {% block _advert_BaseDeDonnee_entry_label %}
+    {% endblock %}
+
+    {% block _advert_Sitesweb_entry_label %}
+    {% endblock %}
+
+    {% block _advert_Reseaux_entry_label %}
+    {% endblock %}
+
+    {% block _advert_Emails_entry_label %}
+    {% endblock %}
+
+
+
+
+
+   {% block _advert_edit_SiteWeb_entry_label %}
+   {% endblock %}
+
+    {% block _advert_edit_Adresse_entry_label %}
+    {% endblock %}
+
+    {% block _advert_edit_Adresse_entry_name_label %}
+    {% endblock %}
+
+    {% block _advert_edit_TelFax_entry_label %}
+    {% endblock %}
+
+    {% block _advert_edit_TelFax_entry_name_label %}
+    {% endblock %}
+
+
+    {% block _advert_edit_NomDeDomaine_entry_label %}
+    {% endblock %}
+
+    {% block _advert_edit_BaseDeDonnee_entry_label %}
+    {% endblock %}
+
+    {% block _advert_edit_Sitesweb_entry_label %}
+    {% endblock %}
+
+    {% block _advert_edit_Reseaux_entry_label %}
+    {% endblock %}
+
+    {% block _advert_edit_Emails_entry_label %}
+    {% endblock %}
+
+
+
+
+<!--div id="advert_NomDeDomaine___name__" class="col-md-10"><div class="form-group"><label class="col-md-5 control-label col-sm-2 control-label" style="text-align: left" for="advert_NomDeDomaine___name___Domaine">Nom de domaine</label><div class="col-sm-10"><input type="url" id="advert_NomDeDomaine___name___Domaine" name="advert[NomDeDomaine][__name__][Domaine]" class="form-control" /></div>
+    </div><div class="form-group"><label class="col-md-5 control-label col-sm-2 control-label" style="text-align: left">Date de création</label><div class="col-sm-10"><div id="advert_NomDeDomaine___name___DateDeCreation" class="form-inline"><select id="advert_NomDeDomaine___name___DateDeCreation_day" name="advert[NomDeDomaine][__name__][DateDeCreation][day]" class="form-control">            <option value="1" >1</option>            <option value="2" >2</option>            <option value="3" >3</option>            <option value="4" >4</option>            <option value="5" >5</option>            <option value="6" >6</option>            <option value="7" >7</option>            <option value="8" >8</option>            <option value="9" >9</option>            <option value="10" >10</option>            <option value="11" >11</option>            <option value="12" >12</option>            <option value="13" >13</option>            <option value="14" >14</option>            <option value="15" >15</option>            <option value="16" >16</option>            <option value="17" >17</option>            <option value="18" >18</option>            <option value="19" >19</option>            <option value="20" >20</option>            <option value="21" >21</option>            <option value="22" >22</option>            <option value="23" >23</option>            <option value="24" >24</option>            <option value="25" >25</option>            <option value="26" >26</option>            <option value="27" >27</option>            <option value="28" >28</option>            <option value="29" >29</option>            <option value="30" >30</option>            <option value="31" >31</option></select><select id="advert_NomDeDomaine___name___DateDeCreation_month" name="advert[NomDeDomaine][__name__][DateDeCreation][month]" class="form-control">            <option value="1" >janv.</option>            <option value="2" >févr.</option>            <option value="3" >mars</option>            <option value="4" >avr.</option>            <option value="5" >mai</option>            <option value="6" >juin</option>            <option value="7" >juil.</option>            <option value="8" >août</option>            <option value="9" >sept.</option>            <option value="10" >oct.</option>            <option value="11" >nov.</option>            <option value="12" >déc.</option></select><select id="advert_NomDeDomaine___name___DateDeCreation_year" name="advert[NomDeDomaine][__name__][DateDeCreation][year]" class="form-control">            <option value="2012" >2012</option>            <option value="2013" >2013</option>            <option value="2014" >2014</option>            <option value="2015" >2015</option>            <option value="2016" >2016</option>            <option value="2017" >2017</option>            <option value="2018" >2018</option>            <option value="2019" >2019</option>            <option value="2020" >2020</option>            <option value="2021" >2021</option>            <option value="2022" >2022</option></select></div></div>
+    </div><div class="form-group"><label class="col-md-5 control-label col-sm-2 control-label" style="text-align: left">Date d&#039;expiration</label><div class="col-sm-10"><div id="advert_NomDeDomaine___name___DateDExpiration" class="form-inline"><select id="advert_NomDeDomaine___name___DateDExpiration_day" name="advert[NomDeDomaine][__name__][DateDExpiration][day]" class="form-control">            <option value="1" >1</option>            <option value="2" >2</option>            <option value="3" >3</option>            <option value="4" >4</option>            <option value="5" >5</option>            <option value="6" >6</option>            <option value="7" >7</option>            <option value="8" >8</option>            <option value="9" >9</option>            <option value="10" >10</option>            <option value="11" >11</option>            <option value="12" >12</option>            <option value="13" >13</option>            <option value="14" >14</option>            <option value="15" >15</option>            <option value="16" >16</option>            <option value="17" >17</option>            <option value="18" >18</option>            <option value="19" >19</option>            <option value="20" >20</option>            <option value="21" >21</option>            <option value="22" >22</option>            <option value="23" >23</option>            <option value="24" >24</option>            <option value="25" >25</option>            <option value="26" >26</option>            <option value="27" >27</option>            <option value="28" >28</option>            <option value="29" >29</option>            <option value="30" >30</option>            <option value="31" >31</option></select><select id="advert_NomDeDomaine___name___DateDExpiration_month" name="advert[NomDeDomaine][__name__][DateDExpiration][month]" class="form-control">            <option value="1" >janv.</option>            <option value="2" >févr.</option>            <option value="3" >mars</option>            <option value="4" >avr.</option>            <option value="5" >mai</option>            <option value="6" >juin</option>            <option value="7" >juil.</option>            <option value="8" >août</option>            <option value="9" >sept.</option>            <option value="10" >oct.</option>            <option value="11" >nov.</option>            <option value="12" >déc.</option></select><select id="advert_NomDeDomaine___name___DateDExpiration_year" name="advert[NomDeDomaine][__name__][DateDExpiration][year]" class="form-control">            <option value="2012" >2012</option>            <option value="2013" >2013</option>            <option value="2014" >2014</option>            <option value="2015" >2015</option>            <option value="2016" >2016</option>            <option value="2017" >2017</option>            <option value="2018" >2018</option>            <option value="2019" >2019</option>            <option value="2020" >2020</option>            <option value="2021" >2021</option>            <option value="2022" >2022</option></select></div></div>
+    </div><div class="form-group"><label class="col-md-5 control-label col-sm-2 control-label" style="text-align: left" for="advert_NomDeDomaine___name___Remarque">Remarque</label><div class="col-sm-10"><textarea id="advert_NomDeDomaine___name___Remarque" name="advert[NomDeDomaine][__name__][Remarque]" class="form-control"></textarea></div>
+    </div></div-->

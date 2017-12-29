@@ -1,0 +1,16 @@
+{% form_theme form1 _self %}
+
+{{ form_start(form1, {'attr': {'class': 'form-horizontal', 'id' : 'myForm', 'enctype' : 'multipart/form-data'},'action': path('oc_platform_editPack',{'id' : pack.id})}) }}
+
+<div class="form-group">
+    {{ form_label(form1.name,'Nom du pack',{'label_attr': {'class': 'col-md-4 control-label'}}) }}
+    {{ form_widget(form1.name) }}
+</div>
+<div class="form-group">
+    {{ form_label(form1.description,'Description',{'label_attr': {'class': 'col-md-1 control-label'}}) }}
+    {{ form_widget(form1.description) }}
+</div>
+{{ form_widget(form1.save, {'attr': {'class': 'btn btn-primary'}}) }}
+  {{ form_rest(form1) }}
+  {{ form_end(form1) }}
+

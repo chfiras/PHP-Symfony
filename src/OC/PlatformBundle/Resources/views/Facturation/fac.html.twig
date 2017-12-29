@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+
+    th, td, h1, strong {
+        font-family: Open Sans;
+    }
+</style>
+<body>
+<div>
+    {% if  facture.Periode|date('M')  == 'Jan' %} {% set month = 'Janvier' %} {% endif %}
+    {% if  facture.Periode|date('M')  == 'Feb' %} {% set month = 'Février' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Mar' %} {% set month = 'Mars' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Apr' %} {% set month = 'Avril' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'May' %} {% set month = 'Mai' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Jun' %} {% set month = 'Juin' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Jul' %} {% set month = 'Juillet' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Aug' %} {% set month = 'Aout' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Sep' %} {% set month = 'Septembre' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Oct' %} {% set month = 'Octobre' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Nov' %} {% set month = 'Novembre' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Dec' %} {% set month = 'Décembre' %}{% endif %}
+
+    <br><br>
+    <h1 style="text-align: center">Facture de {{ month }}{{ facture.Periode|date(' Y') }} - Hypermedia</h1>
+    <br><br>
+</div>
+
+
+
+
+<table class="table table-bordered table-vcenter" style="width: 600px;margin: 0px auto;border-width: 3px">
+    <thead>
+    <tr>
+        <th width="30%" style="font-size: 19px;border-width: 3px;text-align: center;background-color: #f1f1f1">Catégories</th>
+        <th width="30%" style="font-size: 19px;border-width: 3px;text-align: center;background-color: #f1f1f1">Montants</th>
+        <th width="40%" style="font-size: 19px;border-width: 3px;text-align: center;background-color: #f1f1f1">Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% set sum = 0 %}
+    {% for c in array %}
+        {% set x = 0 %}
+        {% set span = 0 %}
+        {% for b in facture.blocFacture %}
+            {% if b.categorie == c %}
+                <tr>
+                    {% set span = span + 1 %}
+                    {% if x == 0 %}<td id="td{{ c }}" style="border-width: 2px;font-size: 17px"><strong>{{ b.categorie }}</strong></td>  {% endif %}<td style="border-width: 2px">{{ b.Montant }} Dt</td> <td style="border-width: 2px;white-space: pre-wrap">{% if b.note is not null %}{{ b.note }} {% else %} &empty; {% endif %}</td>
+                    {% set x = 1 %}
+                </tr>
+            {% endif %}
+        {% endfor %}
+        {% if x == 1 %}
+        <script>
+            document.getElementById('td{{ c }}').rowSpan = {{ span }};
+        </script>
+        {% endif %}
+    {% endfor %}
+    <tr>
+        <td style="border-width: 2px;font-size: 17px">
+            <strong style="color: red">Total :</strong>
+        </td>
+        <td colspan="2" style="text-align: center;border-width: 2px;font-size: 18px">
+            {% set sum = 0 %}
+            {% for b in facture.blocFacture %}
+                {% set sum = sum + b.montant %}
+            {% endfor %}
+            <strong>{{ sum }} DT</strong>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+

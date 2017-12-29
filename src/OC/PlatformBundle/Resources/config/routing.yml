@@ -1,0 +1,129 @@
+# src/OC/PlatformBundle/Resources/config/routing.yml
+
+
+oc_platform_add:
+    path:      /ajouter
+    defaults:
+        _controller: OCPlatformBundle:Advert:add
+
+oc_platform_edit:
+    path:      /edit/{id}
+    defaults:
+        _controller: OCPlatformBundle:Advert:edit
+    requirements:
+        id: \d+
+
+
+oc_platform_tablesfiches:
+    path:      /tableau_des_fiches
+    defaults:
+        _controller: OCPlatformBundle:Advert:tabledefiches
+
+oc_platform_listDomaine:
+    path:      /liste_des_domaines
+    defaults:
+        _controller: OCPlatformBundle:Advert:listDomaine
+
+oc_platform_del:
+    path:    /tableau_des_fiches/delete/{id}
+    defaults:
+        _controller: OCPlatformBundle:Advert:del
+        id: 1
+
+oc_platform_azerty:
+    path:      /azerty
+    defaults:
+        _controller: OCPlatformBundle:Excel:Excel
+
+oc_platform_azertyContact:
+    path:      /azertyContact
+    defaults:
+        _controller: OCPlatformBundle:Excel:ExcelContact
+oc_platform_listClient:
+    path:      /information_de_contact
+    defaults:
+        _controller: OCPlatformBundle:Advert:listClient
+oc_platform_azertyEmail:
+    path:      /azertyEmail
+    defaults:
+        _controller: OCPlatformBundle:Excel:ExcelEmails
+oc_platform_listEmails:
+    path:      /liste_des_emails
+    defaults:
+        _controller: OCPlatformBundle:Advert:listEmails
+
+oc_platform_facturation:
+    path:      /ajouter_une_facture
+    defaults:
+        _controller: OCPlatformBundle:Facturation:add
+
+oc_platform_listFactures:
+    path:      /liste_des_factures
+    defaults:
+        _controller: OCPlatformBundle:Facturation:listFactures
+
+oc_platform_editFacture:
+    path:      /edit_facture/{id}
+    defaults:
+        _controller: OCPlatformBundle:Facturation:edit
+    requirements:
+        id: \d+
+
+
+oc_platform_changeState:
+   path:      /change_state/{fid}with{nid}
+   defaults:
+       _controller: OCPlatformBundle:Advert:changeState
+   requirements:
+       fid: \d+
+       nid: \d+
+
+oc_platform_delFacture:
+    path:    /liste_des_factures/delete/{id}
+    defaults:
+        _controller: OCPlatformBundle:Facturation:del
+        id: 1
+
+oc_platform_ExcelFacture:
+    path: /ExcelFacture/{fid}
+    defaults:
+        _controller: OCPlatformBundle:Excel:ExcelFacture
+    requirements :
+        fid: \d+
+
+oc_platform_fac:
+    path: /fac/{id}
+    defaults:
+        _controller: OCPlatformBundle:Facturation:fac
+    requirements :
+        id: \d+
+
+oc_platform_packs:
+    path : /packs
+    defaults:
+        _controller: OCPlatformBundle:Pack:listPacks
+
+oc_platform_editPack:
+    path : /editPack/{id}
+    defaults :
+        _controller: OCPlatformBundle:Pack:edit
+    requirements:
+        id: \d+
+
+oc_platform_delPack:
+    path:    /deletePack/{id}
+    defaults:
+        _controller: OCPlatformBundle:Pack:del
+        id: 1
+    requirements:
+        id: \d+
+
+oc_platform_toEdit:
+    path: /toEdit/{id}
+    defaults :
+        _controller: OCPlatformBundle:Pack:toEdit
+    requirements:
+        id: \d+
+
+
+

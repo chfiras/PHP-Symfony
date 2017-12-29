@@ -1,0 +1,156 @@
+{% extends 'OCPlatformBundle::layout.html.twig' %}
+
+   {% block title %}
+       Noms de domaine
+   {% endblock %}
+
+{% block body %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Table Styles Block -->
+    <div class="block">
+        <!-- Table Styles Title -->
+        <div class="block-title clearfix">
+            <!-- Changing classes functionality initialized in js/pages/tablesGeneral.js -->
+            <h2><span class="hidden-xs"></span> Liste des noms de domaine </h2>
+            <div class="block-options pull-right">
+            <form  method="get" action="azerty" >
+                <button  class='btn btn-default' type="submit"><span class="fa fa-file-excel-o"></span> Exporter en fichier EXCEL</button>
+            </form>
+            </div>
+        </div>
+        <!-- END Table Styles Title -->
+
+        <!-- Table Styles Content -->
+        <div class="table-responsive">
+            <!--
+            Available Table Classes:
+                'table'             - basic table
+                'table-bordered'    - table with full borders
+                'table-borderless'  - table with no borders
+                'table-striped'     - striped table
+                'table-condensed'   - table with smaller top and bottom cell padding
+                'table-hover'       - rows highlighted on mouse hover
+                'table-vcenter'     - middle align content vertically
+            -->
+            <table id="general-table" class="table table-striped table-bordered table-vcenter">
+                <thead>
+                <tr>
+                    <th style="min-width: 150px" class="text-center">Client</th>
+                    <th class="text-center">Nom de domaine</th>
+                    <th style="width: 320px;" class="text-center">Progression</th>
+                    <th style="width: 120px;" class="text-center"><i class="fa fa-flash"></i></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for domaine in listDomaine %}
+                    <tr>
+                        <td class="text-center" style="font-size: larger"><strong>{{ domaine.Client }}</strong>  </td>
+
+
+                        <td>
+                            {% for n in domaine.NomDeDomaine %}
+                            <strong>Nom De Domaine:</strong> {{ n.Domaine }}<br>
+                                <strong>Date de création:</strong> {{ n.DateDeCreation|date("d M Y")}}<br>
+                                <strong>Date d'expiration:</strong> {{ n.DateDExpiration|date("d M Y")}}<br>
+                                {% if not loop.last %}<br>{% endif %}
+                            {% endfor %}
+
+                        </td>
+                        <td>
+                        {% for n in domaine.NomDeDomaine %}
+                            <div   class="progress progress-mini active" style="margin-top: 70px;margin-bottom: 70px">
+                                <div  id="progressBar{{ n.id }}"  class="progress-bar progress-bar-striped progress-bar-info" role="progressbar" style="width:0%"></div>
+                            </div>
+                            <script>
+                                {% set cre =  n.DateDeCreation|date('U')  %}
+                                {% set exp =  n.DateDExpiration|date('U')  %}
+                                {% set now= "now"|date('U') %}
+                                $(document).ready(function() {
+                                    var width= {{ (now-cre)/(exp-cre)*100 }};
+                                    $('#progressBar{{ n.id }}').width(width+'%');
+                                    if(width > 94)
+                                    {
+                                        $('#progressBar{{ n.id }}').attr('class','progress-bar progress-bar-striped progress-bar-danger')
+                                    }
+                                    if(width > 90 && width<94)
+                                    {
+                                        $('#progressBar{{ n.id }}').attr('class','progress-bar progress-bar-striped progress-bar-warning')
+
+                                    }
+                                    if(width > 98)
+                                    {
+                                        (function blink() {
+                                            $('#progressBar{{ n.id }}').fadeOut(500).fadeIn(500, blink);
+                                        })();
+                                    }
+                                    {% if now - exp >= 86400 %}
+                                        $('#progressBar{{ n.id }}').parent().css('margin-bottom','0px');
+                                        $('#progressBar{{ n.id }}').parent().after($('<label class="text-danger">Ce Nom de domaine a été expiré !</label>'))
+                                        {% if loop.last %}
+                                        $('#progressBar{{ n.id }}').parent().next().css('margin-bottom','70px');
+                                        {% endif %}
+                                    {% endif %}
+                                });
+
+                            </script>
+                        {% endfor %}
+
+                        </td>
+
+
+
+                        <td class="text-center">
+                            <a href="{{ path('oc_platform_edit', {'id':domaine.id}) }}" data-toggle="tooltip" title="Modifier la fiche client" class="btn btn-effect-ripple btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                            <a title="Supprimer client" class="btn btn-effect-ripple btn-xs btn-danger" data-toggle="modal" data-target="#mydelete{{ domaine.id }}" id="trash"><i class="fa fa-trash"></i></a>
+                            <script>
+                                $("#trash").attr('id','trash'+{{ domaine.id }});
+                            </script>
+                            <!--a id="activate" title="Activation nom de domaine" class="btn btn-effect-ripple btn-xs btn-success" data-toggle="tooltip" onclick="actif({#{ fiche.id }#});"><i class="fa fa-check"></i></a-->
+                            <script>
+                                $('#ch').attr('id','act'+{{ domaine.id }});
+                            </script>
+                            <!-- Modal -->
+                            <div class="modal fade" id="mydelete{{ domaine.id }}" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Supprimer une fiche client</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Etes-vous certain de vouloir supprimer la fiche client de "{{ domaine.Client }}" ?
+                                            </p>
+                                            <form action="{{ path('oc_platform_del', {'id': domaine.id}) }}" method="post">
+
+                                                {# Ici j'ai écrit le bouton de soumission à la main #}
+                                                <div class="modal-footer">
+                                                    <input type="submit" value="Supprimer" class="btn btn-danger" />
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Quitter</button>
+                                                </div>
+
+                                                {# Ceci va générer le champ CSRF #}
+                                                {{ form_rest(form) }}
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+        <!-- END Table Styles Content -->
+    </div>
+    <!-- END Table Styles Block -->
+
+{% endblock %}

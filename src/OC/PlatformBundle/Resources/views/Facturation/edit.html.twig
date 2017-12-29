@@ -1,0 +1,155 @@
+{# src/OC/PlatformBundle/Resources/views/Advert/edit.html.twig #}
+
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+  Modifier une facture
+{% endblock %}
+
+{% block ocplatform_body %}
+
+    {% if  facture.Periode|date('M')  == 'Jan' %} {% set month = 'Janvier' %} {% endif %}
+    {% if  facture.Periode|date('M')  == 'Feb' %} {% set month = 'Février' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Mar' %} {% set month = 'Mars' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Apr' %} {% set month = 'Avril' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'May' %} {% set month = 'Mai' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Jun' %} {% set month = 'Juin' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Jul' %} {% set month = 'Juillet' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Aug' %} {% set month = 'Aout' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Sep' %} {% set month = 'Septembre' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Oct' %} {% set month = 'Octobre' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Nov' %} {% set month = 'Novembre' %}{% endif %}
+    {% if  facture.Periode|date('M')  == 'Dec' %} {% set month = 'Décembre' %}{% endif %}
+
+    <h3 style="text-align: center">Modifier la facture de {{ month }} {{ facture.Periode|date('Y') }}</h3> <br>
+
+  {{ include("OCPlatformBundle:Facturation:form.html.twig") }}
+
+
+  <p>
+    <a href="{{ path('oc_platform_listFactures') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour
+    </a>
+  </p>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    {# Voici le script en question : #}
+  <script type="text/javascript" src="{{ asset('js/facturefunction.js') }}"></script>
+
+  <script>facturefunction('div#facturation_edit_blocFacture','#add_blocFacture', 'Autre catégorie')</script>
+
+<script>
+
+    $(document).mousemove(function () {
+        $('#add_blocFacture').on('click',function() {
+            $('.montant').on("keyup",function() {
+                var sum = 0;
+                $('.montant').each(function() {
+                    if(!isNaN(this.value) && this.value.length != 0){
+                        sum += Number($(this).val());
+                        $(this).removeAttr('style');
+                    }
+                    else if (this.value.length != 0){
+                        $(this).css("border-color", "#c43902");
+                        sum = 0;
+                        return false;
+                    }
+                });
+                console.log(sum);
+                if(sum == 0)
+                {
+                    $('#tot').html('0 Dt');
+                }
+                else
+                {
+                    $('#tot').html(sum+ ' Dt');
+                }
+            });
+        });
+
+
+                var sum = 0;
+                $('.montant').each(function() {
+                    if(!isNaN(this.value) && this.value.length != 0){
+                        sum += Number($(this).val());
+                        $(this).removeAttr('style');
+                    }
+                    else if (this.value.length != 0){
+                        $(this).css("border-color", "#c43902");
+                        sum = 0;
+                        return false;
+                    }
+                });
+                if(sum == 0)
+                {
+                    $('#tot').html('0 Dt');
+                }
+                else
+                {
+                    $('#tot').html(sum+ ' Dt');
+                }
+
+
+        $('.montant').on("keyup",function() {
+            var sum = 0;
+            $('.montant').each(function() {
+                if(!isNaN(this.value) && this.value.length != 0){
+                    sum += Number($(this).val());
+                    $(this).removeAttr('style');
+                }
+                else if (this.value.length != 0){
+                    $(this).css("border-color", "#c43902");
+                    sum = 0;
+                    return false;
+                }
+            });
+            console.log(sum);
+            if(sum == 0)
+            {
+                $('#tot').html('0 Dt');
+            }
+            else
+            {
+                $('#tot').html(sum+ ' Dt');
+            }
+        });
+
+        $('#facturation_edit_blocFacture').bind('DOMNodeRemoved',function () {
+
+            var sum = 0;
+            $('.montant').each(function() {
+                if(!isNaN(this.value) && this.value.length != 0){
+                    sum += Number($(this).val());
+                    $(this).removeAttr('style');
+                }
+                else if (this.value.length != 0){
+                    $(this).css("border-color", "#c43902");
+                    sum = 0;
+                    return false;
+                }
+            });
+            console.log(sum);
+            if(sum == 0)
+            {
+                $('#tot').html('0 Dt');
+            }
+            else
+            {
+                $('#tot').html( sum + ' Dt');
+            }
+            console.log($('.montant').length);
+
+        });
+
+    });
+
+    $('.block-title').find('h2').html('Facture de {{ month }} {{ facture.Periode|date('Y') }}')
+
+</script>
+
+{% endblock %}
+
+
+
+

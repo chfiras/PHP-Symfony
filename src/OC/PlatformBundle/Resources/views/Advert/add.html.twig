@@ -1,0 +1,29 @@
+{# src/OC/PlatformBundle/Resources/views/Advert/add.html.twig #}
+
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+
+   {% block title %}
+     Ajouter une fiche client
+   {% endblock %}
+
+{% block body %}
+  <h2>Ajouter une fiche client</h2>
+
+  {{ include("OCPlatformBundle:Advert:form.html.twig") }}
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    {# Voici le script en question : #}
+  <script type="text/javascript" src="{{ asset('js/myfunction.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/upload.js') }}"></script>
+
+    {{ include("OCPlatformBundle:Advert:scripts.html.twig") }}
+
+
+
+
+{% endblock %}

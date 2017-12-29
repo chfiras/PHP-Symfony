@@ -1,0 +1,12 @@
+
+
+
+<h3 style="color: #176eaa"><strong>Bonjour,</strong></h3>
+
+<p style="font-size: 15px;color: #176eaa">{% if exp|date('d')-"now"|date('d') > 0 %}Vous Recevez notamment ce mail car il reste seulement {{ exp|date('d-M-Y')-"now"|date('d-M-Y') }} {% if exp|date('d')-"now"|date('d')>1 %}jours{% else %} jour {% endif %} pour la validité du nom de domaine {{ dom }} du client "{{ client }}".<br>Merci de le réactiver.{% else %}Vous Recevez notamment ce mail car le nom de domaine {{ dom }} du client "{{ client }}" expire aujourd'hui.<br> Merci de le réactiver. {% endif %} </p>
+<p style="font-size: 15px;color: #176eaa">Cordialement,</p>
+<img src="{{ image_src }}">
+
+<p style="color: #7a869d"><img src="{{ phone }}" height="20" width="20"> Tél. : (+216) 74 408 885 <br>
+    <img src="{{ fax }}" height="20" width="20">Fax: (+216) 74 408 886 <br>
+    <img src="{{ mailico }}" height="20" width="20">E-mail: contact@hypermedia.com.tn</p>

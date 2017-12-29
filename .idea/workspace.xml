@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf294037-1e6b-47be-a00c-1a5d43df473d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/img/12.png" afterPath="$PROJECT_DIR$/web/uploads/img/12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/img/13.png" afterPath="$PROJECT_DIR$/web/uploads/img/13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/img/28.png" afterPath="$PROJECT_DIR$/web/uploads/img/28.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Stage.iml" afterPath="$PROJECT_DIR$/.idea/Stage.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/mail.html.twig" afterPath="$PROJECT_DIR$/app/Resources/mail.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/mailFacture.html.twig" afterPath="$PROJECT_DIR$/app/Resources/mailFacture.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Command/EmailCommand.php" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Command/EmailCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Controller/ExcelController.php" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Controller/ExcelController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Controller/FacturationController.php" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Controller/FacturationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/Facturation.php" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/Facturation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/blocFacture.php" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/blocFacture.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Form/FacturationType.php" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Form/FacturationType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Form/blocFactureType.php" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Form/blocFactureType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/edit.html.twig" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/form.html.twig" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/form.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/listDomaine.html.twig" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/listDomaine.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/scripts.html.twig" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/scripts.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/add.html.twig" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/add.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/edit.html.twig" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/form.html.twig" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/form.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/header.html.twig" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/header.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/list.html.twig" afterPath="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/myfunction.js" afterPath="$PROJECT_DIR$/web/js/myfunction.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/add.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Command/EmailCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-257">
+              <caret line="46" column="59" lean-forward="false" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FacturationController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Controller/FacturationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2340">
+              <caret line="136" column="30" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/footer.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fac.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/fac.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1026">
+              <caret line="57" column="213" lean-forward="false" selection-start-line="57" selection-start-column="213" selection-end-line="57" selection-end-column="213" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>height</find>
+      <find>heigh</find>
+      <find>s</find>
+      <find>se</find>
+      <find>set</find>
+      <find>setR</find>
+      <find>setRo</find>
+      <find>setRow</find>
+      <find>setRowH</find>
+      <find>setRowHe</find>
+      <find>setRowHei</find>
+      <find>setRowHeig</find>
+      <find>setRowHeight</find>
+      <find>setRowHeigh</find>
+      <find>m</find>
+      <find>merg</find>
+      <find>merge</find>
+      <find>mergeC</find>
+      <find>mergeCe</find>
+      <find>mergeCel</find>
+      <find>mergeCells</find>
+      <find>mergeCell</find>
+      <find>A</find>
+      <find>Au</find>
+      <find>Aut</find>
+      <find>Auto</find>
+      <find>AutoS</find>
+      <find>AutoSi</find>
+      <find>AutoSize</find>
+      <find>hypermedia</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/web</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views</dir>
+      <dir>$PROJECT_DIR$/web/js</dir>
+      <dir>$PROJECT_DIR$/vendor/liuggio</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Repository/PackRepository.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/Advert.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/NomDeDomaine.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/SiteWeb.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Form/NomDeDomaineType.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Form/SiteWebType.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/add.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/prototype.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Controller/CoreController.php" />
+        <option value="$PROJECT_DIR$/web/js/pages/readyDashboard.js" />
+        <option value="$PROJECT_DIR$/web/js/facturefunction.js" />
+        <option value="$PROJECT_DIR$/web/js/uploadedit.js" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Pack/form.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/Pack.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Form/AdvertType.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Pack/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Controller/PackController.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Form/PackType.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Pack/list.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/jquery.js" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/listEmails.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/fac.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/tabledefiches.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/listClient.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Controller/AdvertController.php" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/listDomaine.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/scripts.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/edit.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/form.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/Facturation.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Entity/blocFacture.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Form/FacturationType.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Form/blocFactureType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/mailFacture.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/form.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/add.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/list.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Controller/ExcelController.php" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/mail.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/footer.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Controller/FacturationController.php" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/header.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/PlatformBundle/Command/EmailCommand.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="64" />
+    <option name="y" value="-11" />
+    <option name="width" value="1303" />
+    <option name="height" value="780" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pack" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Facturation" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Advert" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Command" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation" />
+      <recent name="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert" />
+      <recent name="$PROJECT_DIR$/app/Ressources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHPUnit.Stage">
+    <configuration default="false" name="Form" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/src/OC/PlatformBundle/Form" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Stage" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.Form" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.Stage" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.Stage" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.Form" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf294037-1e6b-47be-a00c-1a5d43df473d" name="Default" comment="" />
+      <created>1499208051121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1499208051121</updated>
+      <workItem from="1499208053473" duration="62000" />
+      <workItem from="1499208163300" duration="6603000" />
+      <workItem from="1499218772632" duration="3429000" />
+      <workItem from="1499254754318" duration="16413000" />
+      <workItem from="1499286004520" duration="1836000" />
+      <workItem from="1499292565915" duration="2948000" />
+      <workItem from="1499301697267" duration="4179000" />
+      <workItem from="1499346541850" duration="6743000" />
+      <workItem from="1499388758323" duration="236000" />
+      <workItem from="1499391016045" duration="599000" />
+      <workItem from="1499515696851" duration="16725000" />
+      <workItem from="1499553383611" duration="8480000" />
+      <workItem from="1499607794767" duration="2441000" />
+      <workItem from="1499615080214" duration="1911000" />
+      <workItem from="1499617706843" duration="14077000" />
+      <workItem from="1499701085586" duration="20222000" />
+      <workItem from="1499778300149" duration="9704000" />
+      <workItem from="1499805138814" duration="3146000" />
+      <workItem from="1499809302773" duration="8412000" />
+      <workItem from="1499856415814" duration="9336000" />
+      <workItem from="1499905046236" duration="6745000" />
+      <workItem from="1499940913243" duration="119000" />
+      <workItem from="1499941547848" duration="20432000" />
+      <workItem from="1499989477756" duration="5763000" />
+      <workItem from="1500027563655" duration="15010000" />
+      <workItem from="1500074470252" duration="7272000" />
+      <workItem from="1500130046060" duration="6762000" />
+      <workItem from="1500148343384" duration="12127000" />
+      <workItem from="1500216143171" duration="564000" />
+      <workItem from="1500300385614" duration="6661000" />
+      <workItem from="1500327803868" duration="2175000" />
+      <workItem from="1500372273579" duration="18434000" />
+      <workItem from="1500408369281" duration="2861000" />
+      <workItem from="1500593455140" duration="226000" />
+      <workItem from="1500630310688" duration="19784000" />
+      <workItem from="1500667949305" duration="1935000" />
+      <workItem from="1500682491030" duration="5209000" />
+      <workItem from="1500728685570" duration="2950000" />
+      <workItem from="1500734616371" duration="516000" />
+      <workItem from="1500735153197" duration="3717000" />
+      <workItem from="1500748911913" duration="8088000" />
+      <workItem from="1500761050075" duration="10604000" />
+      <workItem from="1500849490671" duration="9249000" />
+      <workItem from="1500897131828" duration="11441000" />
+      <workItem from="1500922443902" duration="1560000" />
+      <workItem from="1500924110710" duration="15173000" />
+      <workItem from="1500987919178" duration="1206000" />
+      <workItem from="1500991934400" duration="8892000" />
+      <workItem from="1501015220718" duration="13420000" />
+      <workItem from="1501074953824" duration="1531000" />
+      <workItem from="1501076859151" duration="6046000" />
+      <workItem from="1501185627228" duration="2633000" />
+      <workItem from="1501192910665" duration="9697000" />
+      <workItem from="1501239637942" duration="15549000" />
+      <workItem from="1501268217478" duration="5107000" />
+      <workItem from="1501274575842" duration="14506000" />
+      <workItem from="1501455567072" duration="8524000" />
+      <workItem from="1501504643588" duration="8944000" />
+      <workItem from="1501530061879" duration="11358000" />
+      <workItem from="1501784128326" duration="196000" />
+      <workItem from="1502104009872" duration="760000" />
+      <workItem from="1502155909645" duration="636000" />
+      <workItem from="1502157496752" duration="22000" />
+      <workItem from="1502193188617" duration="11216000" />
+      <workItem from="1502226784256" duration="5275000" />
+      <workItem from="1502236063304" duration="5311000" />
+      <workItem from="1502283686118" duration="5588000" />
+      <workItem from="1502314514022" duration="9655000" />
+      <workItem from="1502367874127" duration="4847000" />
+      <workItem from="1502398493925" duration="9196000" />
+      <workItem from="1502488680150" duration="9582000" />
+      <workItem from="1502575382501" duration="12206000" />
+      <workItem from="1502658980542" duration="16376000" />
+      <workItem from="1502741972968" duration="22050000" />
+      <workItem from="1502804050933" duration="261000" />
+      <workItem from="1502833297983" duration="1550000" />
+      <workItem from="1502834955078" duration="17510000" />
+      <workItem from="1502889553465" duration="3037000" />
+      <workItem from="1502921924590" duration="16409000" />
+      <workItem from="1502979437438" duration="3355000" />
+      <workItem from="1502995829316" duration="9464000" />
+      <workItem from="1503068901659" duration="5174000" />
+      <workItem from="1503085508909" duration="6297000" />
+      <workItem from="1503103581068" duration="1912000" />
+      <workItem from="1503181766460" duration="3712000" />
+      <workItem from="1503189402603" duration="6000" />
+      <workItem from="1503243844717" duration="1315000" />
+      <workItem from="1503314026245" duration="566000" />
+      <workItem from="1503331167606" duration="587000" />
+      <workItem from="1503348112718" duration="10790000" />
+      <workItem from="1503413310791" duration="4048000" />
+      <workItem from="1503417829478" duration="607000" />
+      <workItem from="1503429375518" duration="13619000" />
+      <workItem from="1503498913521" duration="806000" />
+      <workItem from="1503500918682" duration="2500000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="656733000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24135281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22801788" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24135281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Pack/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Form/PackEditType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Entity/Pack.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="35" column="52" lean-forward="false" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Form/PackType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Form/AdvertType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Pack/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="89" lean-forward="false" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Pack/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/delete.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Pack/form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/slogan.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-222">
+          <caret line="3" column="62" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="31549" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/facturefunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/prototype.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/index.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/listEmails.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="68" column="122" lean-forward="false" selection-start-line="68" selection-start-column="122" selection-end-line="68" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/tabledefiches.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="55" column="38" lean-forward="false" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/listClient.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="37" column="43" lean-forward="false" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Controller/AdvertController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Controller/PackController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-826">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="93" column="34" lean-forward="false" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/listDomaine.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="47" column="102" lean-forward="false" selection-start-line="47" selection-start-column="102" selection-end-line="47" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="56" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/scripts.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/myfunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="71" column="40" lean-forward="false" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Advert/form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4644">
+          <caret line="258" column="24" lean-forward="false" selection-start-line="258" selection-start-column="24" selection-end-line="258" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Form/blocFactureType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Entity/Facturation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Entity/blocFacture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/header.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Controller/ExcelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="466" column="8" lean-forward="false" selection-start-line="466" selection-start-column="8" selection-end-line="466" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="74" column="262" lean-forward="false" selection-start-line="74" selection-start-column="262" selection-end-line="74" selection-end-column="262" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/fac.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="57" column="213" lean-forward="false" selection-start-line="57" selection-start-column="213" selection-end-line="57" selection-end-column="213" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/header1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/hypermedia.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/mailFacture.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="30" column="361" lean-forward="false" selection-start-line="30" selection-start-column="361" selection-end-line="30" selection-end-column="361" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/mail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="487" lean-forward="false" selection-start-line="5" selection-start-column="487" selection-end-line="5" selection-end-column="487" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3096">
+          <caret line="172" column="125" lean-forward="false" selection-start-line="172" selection-start-column="125" selection-end-line="172" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="138" column="23" lean-forward="false" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="42" column="93" lean-forward="false" selection-start-line="42" selection-start-column="93" selection-end-line="42" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Form/FacturationType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Controller/FacturationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="136" column="30" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Resources/views/Facturation/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="866">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/PlatformBundle/Command/EmailCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-257">
+          <caret line="46" column="59" lean-forward="false" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

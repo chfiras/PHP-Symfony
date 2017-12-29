@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+{% form_theme form _self %}
+
+<div style="display: inline-block; width: 100%; position: relative" class="container">
+    <div class="col-md-8 col-md-push-2">
+
+    {{ form_start(form, {'attr': {'class': 'form-horizontal', 'id' : 'myForm'}}) }}
+        <div class="block">
+
+          <div class="block-title" style="background-color: rgba(229,229,229,0.45)">
+
+          <h2 style="font-size: larger">Nouvelle facture<br></h2>
+            </div>
+  {# Les erreurs générales du formulaire. #}
+  {#{ form_errors(form) }#}
+
+
+
+  {# Génération manuelle et éclatée : #}
+
+            <div class="form-group">
+
+                    {{  form_label(form.Periode, "Période", {'label_attr': {'class': 'col-md-1 control-label col-md-push-2'}}) }}
+
+                        {#{  form_label(form.Periode, "Période", {'label_attr': {'class': 'col-md-5 control-label'}}) }#}
+                        {{ form_widget(form.Periode.day, {'attr': {'class': 'hide'}}) }}
+                        {{ form_widget(form.Periode) }}
+                        {{ form_errors(form.Periode) }}
+            </div>
+
+  <div class="form-group">
+      <div >
+      {{ form_widget(form.blocFacture,{'attr':{'class' : 'col-md-10 col-md-push-2'}}) }}
+      </div>
+
+  </div>
+
+            <br>
+            <label class="control-label" style="font-size: 20px;">Total :</label>
+            <p id="tot" style="font-family: 'Times New Roman';font-size: 20px;display: inline"> </p>
+
+
+            {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
+  <div style="padding-bottom: 2%; width: 300px;margin: 0 auto">
+          <a href="#" id="add_blocFacture" class="btn btn-success">
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+              Ajouter un autre bloc
+          </a>
+  {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+  </div>
+        </div>
+
+
+
+  {{ form_rest(form) }}
+
+  {{ form_end(form) }}
+
+
+
+</div>
+</div>
+
+{% block _facturation_blocFacture_entry_label %}
+{% endblock %}
+
+{% block _facturation_edit_blocFacture_entry_label %}
+{% endblock %}
+
+<script>
+    $("#mah").click(function (e) {
+        if(document.getElementById("sidebar-scroll").style.length)
+        {
+            $("#add_blocFacture").parent().css("right","195px")
+        }
+        else
+        {
+            $("#add_blocFacture").parent().css("right","235px")
+
+        }
+    })
+
+</script>
+
+
+    <script>
+        $('.montant').each(function() {
+            if ($('.help-block').length   && !isNaN(this.value)) {
+                $('#facturation_Periode_month').css('border-color', '#c43902');
+                $('#facturation_Periode_year').css('border-color', '#c43902');
+            }
+            else if($('.help-block').length > 1)
+            {
+                $('#facturation_Periode_month').css('border-color', '#c43902');
+                $('#facturation_Periode_year').css('border-color', '#c43902');
+            }
+        })
+    </script>

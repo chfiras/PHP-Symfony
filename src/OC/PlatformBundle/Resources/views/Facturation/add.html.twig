@@ -1,0 +1,130 @@
+
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+
+
+
+{% block body %}
+    <h3 style="text-align: center">Formulaire d'ajout d'une facture</h3> <br>
+
+  {{ include("OCPlatformBundle:Facturation:form.html.twig") }}
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    {# Voici le script en question : #}
+  <script type="text/javascript" src="{{ asset('js/facturefunction.js') }}">
+  </script>
+
+
+    <script>facturefunction('div#facturation_blocFacture','#add_blocFacture', 'Autre catégorie')</script>
+
+
+<script>
+
+    $(document).mousemove(function () {
+        $('#add_blocFacture').on('click',function() {
+            $('.montant').on("keyup",function() {
+                var sum = 0;
+                $('.montant').each(function() {
+                    if(!isNaN(this.value) && this.value.length != 0){
+                        sum += Number($(this).val());
+                        $(this).removeAttr('style');
+                    }
+                    else if (this.value.length != 0){
+                        $(this).css("border-color", "#c43902");
+                        sum = 0;
+                        return false;
+                    }
+                });
+                if(sum == 0 )
+                {
+                    $('#tot').html('0 Dt');
+                }
+                else
+                {
+                    $('#tot').html(sum+ ' Dt');
+                }
+            });
+        });
+
+
+        var sum = 0;
+        $('.montant').each(function() {
+            if(!isNaN(this.value) && this.value.length != 0){
+                sum += Number($(this).val());
+                $(this).removeAttr('style');
+            }
+            else if (this.value.length != 0){
+                $(this).css("border-color", "#c43902");
+                sum = 0;
+                return false;
+            }
+        });
+        if(sum == 0)
+        {
+            $('#tot').html('0 Dt');
+        }
+        else
+        {
+            $('#tot').html(sum+ ' Dt');
+        }
+
+
+
+        {
+            $('.montant').on("keyup",function() {
+                var sum = 0;
+                $('.montant').each(function() {
+
+                    if(!isNaN(this.value) && this.value.length != 0){
+                        sum += Number($(this).val());
+                        $(this).removeAttr('style');
+                    }
+                    else if (this.value.length != 0){
+                        $(this).css("border-color", "#c43902");
+                        sum = 0;
+                        return false;
+                    }
+                });
+                if(sum == 0)
+                {
+                    $('#tot').html('0 Dt');
+                }
+                else
+                {
+                    $('#tot').html(sum+ ' Dt');
+                }
+            });
+        }
+
+        $('#facturation_blocFacture').bind('DOMNodeRemoved',function () {
+
+            var sum = 0;
+             $('.montant').each(function() {
+             if(!isNaN(this.value) && this.value.length != 0){
+             sum += Number($(this).val());
+                 $(this).removeAttr('style');
+             }
+             else if (this.value.length != 0){
+             $(this).css("border-color", "#c43902");
+                 sum = 0;
+                 return false;
+             }
+             });
+             if(sum == 0)
+             {
+             $('#tot').html('0 Dt');
+             }
+             else
+             {
+             $('#tot').html(sum + ' Dt');
+             }
+        });
+
+        });
+
+</script>
+
+
+{% endblock %}

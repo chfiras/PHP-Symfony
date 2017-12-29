@@ -1,0 +1,130 @@
+{% extends 'OCPlatformBundle::layout.html.twig' %}
+
+   {% block title %}
+       Informations de contact
+   {% endblock %}
+
+{% block body %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <div class="block">
+        <!-- Table Styles Title -->
+        <div class="block-title clearfix">
+            <!-- Changing classes functionality initialized in js/pages/tablesGeneral.js -->
+
+
+            <h2><span class="hidden-xs">Informations</span> de contact</h2>
+
+            <div class="block-options pull-right">
+            <form  method="get" action="azertyContact" >
+                <button  class='btn btn-default' type="submit"><i class="fa fa-file-excel-o"></i> Exporter en fichier EXCEL</button>
+            </form>
+            </div>
+
+        </div>
+        <!-- END Table Styles Title -->
+
+        <!-- Table Styles Content -->
+        <div class="table-responsive">
+
+            <table id="general-table" class="table table-striped table-bordered table-vcenter">
+
+                <thead>
+                <tr>
+                    <th class="text-center">Client</th>
+                    <th class="text-center">Responsable</th>
+                    <th class="text-center">Site(s) web</th>
+                    <th class="text-center">Téléphone/Fax</th>
+                    <th class="text-center">Mail Principal</th>
+                    <th class="text-center" style="width: 110px;"><i class="fa fa-flash"></i></th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+
+                {% for fiche in listClient %}
+
+                    <tr>
+                        <td >
+                            {{ fiche.Client }}
+                        </td>
+
+                        <td>
+                            {{ fiche.Responsable }}
+                        </td>
+
+                        <td>
+                            {% for s in fiche.SiteWeb %}
+                                <li>{{ s.name }}</li>
+                            {% endfor %}
+                        </td>
+
+                        <td>
+                            {% for n in fiche.TelFax %}
+                                <li>{{ n.name}}</li>
+                            {% endfor %}
+                        </td>
+
+                        <td>
+                            {{ fiche.MailPrincipal }}
+                        </td>
+
+
+
+
+                        <td class="text-center">
+                            <a href="{{ path('oc_platform_edit', {'id':fiche.id}) }}" data-toggle="tooltip" title="Modifier la fiche client" class="btn btn-effect-ripple btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                            <a title="Supprimer client" class="btn btn-effect-ripple btn-xs btn-danger" data-toggle="modal" data-target="#mydelete{{ fiche.id }}"><i class="fa fa-trash"></i></a>
+                            <!--a id="activate" title="Activation nom de domaine" class="btn btn-effect-ripple btn-xs btn-success" data-toggle="tooltip" onclick="actif({#{ fiche.id }#});"><i class="fa fa-check"></i></a-->
+                            <script>
+                                $('#ch').attr('id','act'+{{ fiche.id }});
+                            </script>
+                            <!-- Modal -->
+                            <div class="modal fade" id="mydelete{{ fiche.id }}" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Supprimer une fiche client</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Etes-vous certain de vouloir supprimer la fiche client de "{{ fiche.Client }}" ?
+                                            </p>
+                                            <form action="{{ path('oc_platform_del', {'id': fiche.id}) }}" method="post">
+
+                                                {# Ici j'ai écrit le bouton de soumission à la main #}
+                                                <div class="modal-footer">
+                                                    <input type="submit" value="Supprimer" class="btn btn-danger" />
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Quitter</button>
+                                                </div>
+
+                                                {# Ceci va générer le champ CSRF #}
+                                                {{ form_rest(form) }}
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+                {% endfor %}
+
+
+
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+{% endblock %}

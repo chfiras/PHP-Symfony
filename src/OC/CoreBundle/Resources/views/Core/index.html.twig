@@ -1,0 +1,308 @@
+{# On utilise ici le layout général, qui se situe dans ce même CoreBundle maintenant #}
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% block title %}
+  Page d'accueil - Hypermedia (Gestion des clients)
+{% endblock %}
+
+{% block body %}
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <div id="page-content">
+    <!-- First Row -->
+    <div class="row">
+      <!-- Simple Stats Widgets -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="widget">
+          <div class="widget-content widget-content-mini text-right clearfix">
+            <div class="widget-icon pull-left themed-background">
+              <i class="gi gi-user text-light-op"></i>
+            </div>
+            <h2 class="widget-heading h3 text-primary">
+              <strong><span data-toggle="counter" data-to="{{ fiches|length }}"></span></strong>
+            </h2>
+            <span class="text-muted">Clients</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="widget">
+          <div class="widget-content widget-content-mini text-right clearfix">
+            <div class="widget-icon pull-left themed-background-success">
+              <i class="gi gi-global text-light-op"></i>
+            </div>
+            <h2 class="widget-heading h3 text-success">
+              {% set nbrdomaine = 0 %}
+              {% for f in fiches %}
+                  {% set nbrdomaine = nbrdomaine + f.NomDeDomaine|length %}
+              {% endfor %}
+              <strong><span data-toggle="counter" data-to="{{ nbrdomaine }}"></span></strong>
+            </h2>
+            <span class="text-muted">Noms De Domaine</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="widget">
+          <div class="widget-content widget-content-mini text-right clearfix">
+            <div class="widget-icon pull-left themed-background-warning">
+              <i class="gi gi-money text-light-op"></i>
+            </div>
+            <h2 class="widget-heading h3 text-warning">
+                {% set depense = 0 %}
+                {% for f in factures %}
+                    {% for b in f.blocFacture %}
+                        {% set depense = depense + b.Montant %}
+                    {% endfor %}
+                {% endfor %}
+              <strong> <span data-toggle="counter" data-to="{{ depense }}"></span> Dt</strong>
+            </h2>
+
+            <span class="text-muted">Dépenses</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="widget">
+          <div class="widget-content widget-content-mini text-right clearfix">
+            <div class="widget-icon pull-left themed-background-danger">
+              <i class="gi gi-envelope text-light-op"></i>
+            </div>
+            <h2 class="widget-heading h3 text-danger">
+              {% set nbrmail = fiches|length %}
+              {% for f in fiches %}
+                  {% set nbrmail = nbrmail + f.Emails|length %}
+              {% endfor %}
+
+              <strong> <span data-toggle="counter" data-to="{{ nbrmail }}"></span></strong>
+            </h2>
+            <span class="text-muted">Emails</span>
+          </div>
+        </div>
+      </div>
+      <!-- END Simple Stats Widgets -->
+    </div>
+    <!-- END First Row -->
+
+    <!-- Second Row -->
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Chart Widget -->
+        <div class="widget">
+          <div class="widget-content border-bottom">
+            Courbes des dépenses des 3 dernières années
+          </div>
+          <div class="widget-content border-bottom themed-background-muted">
+            <!-- Flot Charts (initialized in js/pages/readyDashboard.js), for more examples you can check out http://www.flotcharts.org/ -->
+            <div id="chart-classic-dash" style="height: 393px;"></div>
+          </div>
+            {% set sumcurrent = 0 %}
+            {% for f in factures %}
+                {% if f.Periode|date('Y')=="now"|date('Y') %}
+                    {% for b in f.blocFacture %}
+                        {% set sumcurrent=sumcurrent+b.Montant %}
+                        {% endfor %}
+            {% endif %}
+            {% endfor %}
+
+            {% set sumlast = 0 %}
+            {% for f in factures %}
+                {% if f.Periode|date('Y')=="now"|date('Y')-1 %}
+                    {% for b in f.blocFacture %}
+                        {% set sumlast=sumlast+b.Montant %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+
+            {% set sumlastlast = 0 %}
+            {% for f in factures %}
+                {% if f.Periode|date('Y')=="now"|date('Y')-2 %}
+                    {% for b in f.blocFacture %}
+                        {% set sumlastlast=sumlastlast+b.Montant %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+
+
+          <div class="widget-content widget-content-full">
+            <div class="row text-center">
+              <div class="col-xs-4 push-inner-top-bottom border-right">
+                  <h3 class="widget-heading" style="font-size: 20px"><i class="gi gi-money text-dark push-bit"></i> <br>Dépenses en {{ "now"|date('Y') }}<br><strong>{{ sumcurrent }} Dt</strong></h3>
+              </div>
+              <div class="col-xs-4 push-inner-top-bottom">
+                <h3 class="widget-heading" style="font-size: 20px"><i class="gi gi-money text-dark push-bit"></i> <br>Dépenses en {{ "now"|date('Y') - 1 }}<br><strong>{{ sumlast }} Dt</strong></h3>
+              </div>
+              <div class="col-xs-4 push-inner-top-bottom border-left">
+                <h3 class="widget-heading" style="font-size: 20px"><i class="gi gi-money text-dark push-bit"></i> <br>Dépenses en {{ "now"|date('Y') - 2 }}<br><strong>{{ sumlastlast }} Dt</strong></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Chart Widget -->
+      </div>
+
+    </div>
+
+  </div>
+
+  {#<script src="js/pages/readyDashboard.js"></script>#}
+  <script>$(function(){ ReadyDashboard.init(); });</script>
+
+    <script>
+        var ReadyDashboard = function() {
+
+            return {
+                init: function() {
+                  /* With CountTo, Check out examples and documentation at https://github.com/mhuggins/jquery-countTo */
+                    $('[data-toggle="counter"]').each(function(){
+                        var $this = $(this);
+
+                        $this.countTo({
+                            speed: 1000,
+                            refreshInterval: 25,
+                            onComplete: function() {
+                                if($this.data('after')) {
+                                    $this.html($this.html() + $this.data('after'));
+                                }
+                            }
+                        });
+                    });
+
+                  /* Mini Line Charts with jquery.sparkline plugin, for more examples you can check out http://omnipotent.net/jquery.sparkline/#s-about */
+                    var widgetChartLineOptions = {
+                        type: 'line',
+                        width: '200px',
+                        height: '109px',
+                        tooltipOffsetX: -25,
+                        tooltipOffsetY: 20,
+                        lineColor: '#9bdfe9',
+                        fillColor: '#9bdfe9',
+                        spotColor: '#555555',
+                        minSpotColor: '#555555',
+                        maxSpotColor: '#555555',
+                        highlightSpotColor: '#555555',
+                        highlightLineColor: '#555555',
+                        spotRadius: 3,
+                        tooltipPrefix: '',
+                        tooltipSuffix: ' Sales',
+                    {#tooltipFormat: '{{prefix}}{{y}}{{suffix}}'#}
+                    };
+                    $('#widget-dashchart-sales').sparkline('html', widgetChartLineOptions);
+
+                  /*
+                   * Flot Charts Jquery plugin is used for charts
+                   *
+                   * For more examples or getting extra plugins you can check http://www.flotcharts.org/
+                   * Plugins included in this template: pie, resize, stack, time
+                   */
+
+                    // Get the element where we will attach the chart
+                    var chartClassicDash    = $('#chart-classic-dash');
+
+                    // Data for the chart
+                    var currentYear        = [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0]];
+                    {% for f in factures %}
+                    {% set sum1 = 0 %}
+                    {% if f.Periode|date('Y') == "now"|date('Y') %}
+                    {% for b in f.blocFacture %}
+                    {% set sum1 = sum1 + b.Montant %}
+                    {% endfor %}
+                    currentYear[{{ f.Periode|date('m')  }}-1] = [{{ f.Periode|date('m') }},{{ sum1 }}];
+                    {% endif %}
+                    {% endfor %}
+                    console.log(currentYear);
+
+
+                    var lastYear        = [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0]];
+                    {% for f in factures %}
+                    {% set sum2 = 0 %}
+                    {% if f.Periode|date('Y') == "now"|date('Y') - 1 %}
+                    {% for b in f.blocFacture %}
+                    {% set sum2 = sum2 + b.Montant %}
+                    {% endfor %}
+                    lastYear[{{ f.Periode|date('m') }}-1] = [{{ f.Periode|date('m') }},{{ sum2 }}];
+                    {% endif %}
+                    {% endfor %}
+
+
+                    var lastlastYear        = [[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0]];
+                    {% for f in factures %}
+                    {% set sum3 = 0 %}
+                    {% if f.Periode|date('Y') =="now"|date('Y') - 2 %}
+                    {% for b in f.blocFacture %}
+                    {% set sum3 = sum3 + b.Montant %}
+                    {% endfor %}
+                    lastlastYear[{{ f.Periode|date('m') }}-1] = [{{ f.Periode|date('m') }},{{ sum3 }}];
+                    {% endif %}
+                    {% endfor %}
+
+
+                    var dataMonths          = [[1, 'Jan'], [2, 'Feb'], [3, 'Mar'], [4, 'Apr'], [5, 'May'], [6, 'Jun'], [7, 'Jul'], [8, 'Aug'], [9, 'Sep'], [10, 'Oct'], [11, 'Nov'], [12, 'Dec']];
+
+                    // Classic Chart
+                    $.plot(chartClassicDash,
+                        [
+                            {
+                                label: 'Dépenses en {{ "now"|date('Y') }}',
+                                data: currentYear,
+                                lines: {show: true, fill: true, fillColor: {colors: [{opacity: .6}, {opacity: .6}]}},
+                                points: {show: true, radius: 5}
+                            },
+                            {
+                                label: 'Dépenses en {{ "now"|date('Y') -1 }}',
+                                data: lastYear,
+                                lines: {show: true, fill: true, fillColor: {colors: [{opacity: .6}, {opacity: .6}]}},
+                                points: {show: true, radius: 5}
+                            },
+                            {
+                                label: 'Dépenses en {{ "now"|date('Y') -2 }}',
+                                data: lastlastYear,
+                                lines: {show: true, fill: true, fillColor: {colors: [{opacity: .6}, {opacity: .6}]}},
+                                points: {show: true, radius: 5}
+                            }
+                        ],
+                        {
+                            colors: ['#5ccdde', '#454e59', '#ffffcc'],
+                            legend: {show: true, position: 'nw', backgroundOpacity: 0},
+                            grid: {borderWidth: 0, hoverable: true, clickable: true},
+                            yaxis: {show: false, tickColor: '#f5f5f5', ticks: 3},
+                            xaxis: {ticks: dataMonths, tickColor: '#f9f9f9'}
+                        }
+                    );
+
+                    // Creating and attaching a tooltip to the classic chart
+                    var previousPoint = null, ttlabel = null;
+                    chartClassicDash.bind('plothover', function(event, pos, item) {
+
+                        if (item) {
+                            if (previousPoint !== item.dataIndex) {
+                                previousPoint = item.dataIndex;
+
+                                $('#chart-tooltip').remove();
+                                var x = item.datapoint[0], y = item.datapoint[1];
+
+                                if (item.seriesIndex === 0) {
+                                    ttlabel = ' <strong>' + y + '</strong> Dt';
+                                } else if (item.seriesIndex === 1) {
+                                    ttlabel = '<strong>' + y + '</strong> Dt';
+                                } else {
+                                    ttlabel = '<strong>' + y + '</strong> Dt';
+                                }
+
+                                $('<div id="chart-tooltip" class="chart-tooltip">' + ttlabel + '</div>')
+                                    .css({top: item.pageY - 45, left: item.pageX + 5}).appendTo("body").show();
+                            }
+                        }
+                        else {
+                            $('#chart-tooltip').remove();
+                            previousPoint = null;
+                        }
+                    });
+                }
+            };
+        }();
+    </script>
+
+
+{% endblock %}
